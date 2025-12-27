@@ -1,0 +1,143 @@
+/* body{
+    text-align: center;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: rgb(234, 29, 36);
+}
+
+.green{
+    background-color: greenyellow;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.active{
+    filter: brightness(180%);
+    transform: scale(1.05);
+    transition: all 0.3s;
+} */
+ /* Body with gradient + center alignment */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fecd89, #66a6ff);
+}
+
+/* Glassmorphic wrapper */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+h2, h3 {
+    margin: 0.5rem 0;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Button rows */
+.line-one, .line-two {
+    display: flex;
+    justify-content: center;
+}
+
+/* Simon buttons */
+.btn {
+    height: 160px;
+    width: 160px;
+    border-radius: 20%;
+    border: 6px solid #222;
+    margin: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.red {
+    background: rgb(234, 29, 36);
+}
+
+.yellow {
+    background: yellow;
+    color: #333;
+}
+
+.green {
+    background: greenyellow;
+    color: #333;
+}
+
+.purple {
+    background: purple;
+}
+
+/* Active state when flashing */
+.active {
+    filter: brightness(180%);
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .btn {
+        height: 120px;
+        width: 120px;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
