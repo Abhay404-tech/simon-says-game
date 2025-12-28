@@ -5,7 +5,7 @@ The game challenges players to remember and repeat an ever-increasing sequence o
 
 🚀 Live Demo
 
-👉  https://your-username.github.io/simon-says-game/
+👉 https://abhay404-tech.github.io/simon-says-game/
 
 🛠️ Tech Stack
 
